@@ -1,0 +1,13 @@
+{
+    "landingPage": "/wp-admin/plugins.php",
+    "login": true,
+    "steps": [
+        {
+            "step": "installPlugin",
+            "pluginData": {
+                "resource": "url",
+                "url": "https://github.com/aethonic/poptics/tree/release/1.0.1"
+            }
+        }
+    ]
+}
