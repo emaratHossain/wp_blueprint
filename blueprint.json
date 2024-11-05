@@ -1,13 +1,16 @@
 {
-    "landingPage": "/wp-admin/plugins.php",
-    "login": true,
-    "steps": [
-        {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "url",
-                "url": "https://github.com/aethonic/poptics/tree/release/1.0.1"
-            }
-        }
-    ]
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "login": true,
+  "siteOptions": {
+    "blogname": "Poptics Plugin Playground"
+  },
+  "plugins": [
+    "https://raw.githubusercontent.com/emaratHossain/wp_blueprint/main/poptics.zip"
+  ],
+  "steps": [
+    {
+      "step": "activatePlugin",
+      "pluginPath": "poptics/poptics.php"
+    }
+  ]
 }
